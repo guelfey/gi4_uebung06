@@ -37,6 +37,9 @@ default:
 all:
 	$(MAKE) $(NAME)
 
+inthexdec: inthexdec.o
+	$(CC) -m32 $(CFLAGS) -o inthexdec $< $(LDFLAGS)
+
 $(NAME): $(OBJS)
 	$(CC) $(CFLAGS) -o $(NAME) $(OBJS) $(LDFLAGS)
 
