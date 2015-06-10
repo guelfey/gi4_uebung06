@@ -6,7 +6,7 @@ CXX = g++
 # flags for debugging
 CFLAGS = -Wall -O0 -g -pthread
 CXXFLAGS = $(CFLAGS)
-LDFLAGS = 
+LDFLAGS = -lm
 RM = rm -rf
 ASM = nasm
 ASMFLAGS = -f elf32 -O0 -g -F dwarf
